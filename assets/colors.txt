@@ -1,0 +1,6 @@
+Green B6FF00
+Grey A9A9A9
+Indigo 4B0082
+Pink FF23DC
+Purple B200FF
+Yellow FFD800

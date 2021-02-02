@@ -1,0 +1,301 @@
+<!--
+theme name:     Custom Box
+Creator:        Matt Gonzales (Jetup)
+Insperation:    NES BOX Theme by Travis Wilson
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+   
+   
+
+  <!--Variables such as theme configuration. Variables can be used to simplify theme construction-->
+
+ <variables>
+		<BackgroundSubsetName>Background</BackgroundSubsetName>
+		<BackgroundColorSubsetName>Background Color</BackgroundColorSubsetName>
+		<LogoColorSubsetName>Logo Color</LogoColorSubsetName>
+		<LogoLayerSubsetName>Logo Layer</LogoLayerSubsetName>
+		<LogoBackgroundSubsetName>Logo Background</LogoBackgroundSubsetName>
+		<LogoBackgroundColorSubsetName>Logo Background Color</LogoBackgroundColorSubsetName>
+		<HideCharactersSubsetName>Hide Characters</HideCharactersSubsetName>
+		<SystemInfoColorSubsetName>System Info Color</SystemInfoColorSubsetName>
+</variables>
+
+<!--Subsets for variables. Subset are usefull to create multiple variations in a theme-->
+
+ <subset name="Background" displayName="${BackgroundSubsetName}">
+        <include name="crystal" displayName="${crystal}">./assets/backgrounds/crystal.xml</include>
+		<include name="clounds" displayName="${clouds}">./assets/backgrounds/clouds.xml</include>
+        <include name="blank" displayName="${blank}">./assets/backgrounds/blank.xml</include>
+ </subset>
+ 
+ <subset name="BackgroundColor" displayName="${BackgroundColorSubsetName}" appliesTo="system,detailed,video,basic">
+        <include name="off" displayName="${off}"/>
+		<include name="red" displayName="${red}">./assets/colorbackgrounds/red.xml</include>
+        <include name="blue" displayName="${blue}">./assets/colorbackgrounds/blue.xml</include>
+		<include name="green" displayName="${green}">./assets/colorbackgrounds/green.xml</include>
+		<include name="yellow" displayName="${yellow}">./assets/colorbackgrounds/yellow.xml</include>
+		<include name="purple" displayName="${purple}">./assets/colorbackgrounds/purple.xml</include>
+		<include name="pink" displayName="${pink}">./assets/colorbackgrounds/pink.xml</include>
+		<include name="indigo" displayName="${indigo}">./assets/colorbackgrounds/indigo.xml</include>
+		<include name="grey" displayName="${grey}">./assets/colorbackgrounds/grey.xml</include>
+ </subset>
+ 
+ <subset name="LogoColor" displayName="${LogoColorSubsetName}" appliesTo="system">
+        <include name="white" displayName="${white}"/>
+		<include name="red" displayName="${red}">./assets/logocolor/red.xml</include>
+        <include name="blue" displayName="${blue}">./assets/logocolor/blue.xml</include>
+		<include name="green" displayName="${green}">./assets/logocolor/green.xml</include>
+		<include name="yellow" displayName="${yellow}">./assets/logocolor/yellow.xml</include>
+		<include name="purple" displayName="${purple}">./assets/logocolor/purple.xml</include>
+		<include name="pink" displayName="${pink}">./assets/logocolor/pink.xml</include>
+		<include name="indigo" displayName="${indigo}">./assets/logocolor/indigo.xml</include>
+		<include name="grey" displayName="${grey}">./assets/logocolor/grey.xml</include>
+ </subset>
+ 
+  <subset name="LogoLayer" displayName="${LogoLayerSubsetName}" appliesTo="system">
+		<include name="back" displayName="${back}">./assets/logolayer/back.xml</include>
+        <include name="front" displayName="${front}">./assets/logolayer/front.xml</include>
+ </subset>
+ 
+ <subset name="LogoBackground" displayName="${LogoBackgroundSubsetName}" appliesTo="system">
+        <include name="off" displayName="${off}"/>
+		<include name="blur" displayName="${blur}">./assets/logobackground/blur.xml</include>
+        <include name="blank" displayName="${blank}">./assets/logobackground/blank.xml</include>
+		<include name="border" displayName="${border}">./assets/logobackground/border.xml</include>
+		<include name="borderblur" displayName="${border}">./assets/logobackground/borderblur.xml</include>
+ </subset>
+ 
+ <subset name="LogoBackgroundColor" displayName="${LogoBackgroundColorSubsetName}" appliesTo="system">
+        <include name="white" displayName="${white}"/>
+		<include name="red" displayName="${red}">./assets/colorlogobackground/red.xml</include>
+        <include name="blue" displayName="${blue}">./assets/colorlogobackground/blue.xml</include>
+		<include name="green" displayName="${green}">./assets/colorlogobackground/green.xml</include>
+		<include name="yellow" displayName="${yellow}">./assets/colorlogobackground/yellow.xml</include>
+		<include name="purple" displayName="${purple}">./assets/colorlogobackground/purple.xml</include>
+		<include name="pink" displayName="${pink}">./assets/colorlogobackground/pink.xml</include>
+		<include name="indigo" displayName="${indigo}">./assets/colorlogobackground/indigo.xml</include>
+		<include name="grey" displayName="${grey}">./assets/colorlogobackground/grey.xml</include>
+ </subset>
+ 
+  <subset name="HideCharacters" displayName="${HideCharactersSubsetName}" appliesTo="system">
+        <include name="no" displayName="${no}"/>
+		<include name="yes" displayName="${yes}">./assets/characters/hide.xml</include>
+ </subset>
+ 
+ <subset name="SystemInfoColor" displayName="${SystemInfoColorSubsetName}" appliesTo="system">
+        <include name="white" displayName="${white}">./assets/systeminfocolor/white.xml</include>
+		<include name="red" displayName="${red}">./assets/systeminfocolor/red.xml</include>
+        <include name="blue" displayName="${blue}">./assets/systeminfocolor/blue.xml</include>
+		<include name="green" displayName="${green}">./assets/systeminfocolor/green.xml</include>
+		<include name="yellow" displayName="${yellow}">./assets/systeminfocolor/yellow.xml</include>
+		<include name="purple" displayName="${purple}">./assets/systeminfocolor/purple.xml</include>
+		<include name="pink" displayName="${pink}">./assets/systeminfocolor/pink.xml</include>
+		<include name="indigo" displayName="${indigo}">./assets/systeminfocolor/indigo.xml</include>
+		<include name="grey" displayName="${grey}">./assets/systeminfocolor/grey.xml</include>
+ </subset>
+   
+   <!--Theme Views-->
+   <!--view name="system" is used for the system selection-->
+   <!--view name="detailed" is used for the detailed view for gamelist (cover art, details)-->
+   <!--view name="video" is used for the video view for gamelist (videos, cover art, details)-->
+   <!--view name="basic" is used for the basic view for gamelist (no cover art or details-->
+   <!--view name="menu" is used for the Emulationstation menu-->
+   
+   <!--Theme Elements-->
+   <!-- -->
+   <!-- -->
+   <!-- -->
+   <!-- -->
+   <!-- -->
+   <!-- -->
+   
+   
+ <feature supported="carousel">
+   <view name="system">
+      <carousel name="systemcarousel">
+        <type>vertical</type>
+        <pos>0.0 0.0</pos>      
+        <size>1.0 1.0</size>
+        <logoScale>1</logoScale>         
+        <logoSize>1 1</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>1</maxLogoCount>       
+      </carousel>
+	  
+	<image name="logo">
+		 <path>./logos/white/${system.theme}.png</path>
+	</image>
+	  
+      <image name="characters" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+		 <zIndex>6</zIndex>
+         <path>./characters/${system.theme}.png</path>
+      </image>
+	  
+      <text name="systemInfo">     
+         <pos>0.0 0.0</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+	     <fontSize>0.05</fontSize>
+         <zIndex>5</zIndex>	     
+      </text>            
+   </view>
+ </feature>
+
+ <view name="system">
+      <helpsystem name="help">
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>0.028</fontSize>     
+         <pos>0.02 0.948</pos>      
+         <textColor>FFFFFF</textColor>
+         <iconColor>FFFFFF</iconColor>
+      </helpsystem>
+  </view>  
+
+  <view name="detailed,video,basic">
+      <helpsystem name="help">
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>0.028</fontSize>     
+         <pos>0.02 0.948</pos>      
+         <textColor>FFFFFF</textColor>
+         <iconColor>FFFFFF</iconColor>
+      </helpsystem>
+  </view>  
+
+  <view name="basic,detailed,video">
+      <textlist name="gamelist">      
+         <selectorColor>00000000</selectorColor>
+         <selectedColor>ff3a3a</selectedColor>
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ca9d5f</secondaryColor>
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>0.04</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound>./_inc/sounds/Move.wav</scrollSound>
+         <zIndex>3</zIndex>                          
+      </textlist>
+  </view> 
+   
+  <view name="detailed,video">
+      <textlist name="gamelist">                          
+         <pos>0.0 0.025</pos>
+         <size>0.48 0.9</size>
+         <alignment>left</alignment>                       
+      </textlist>
+  </view>
+   
+  <view name="basic">
+      <textlist name="gamelist">                          
+         <pos>0.2 0.19</pos>
+         <size>.6 0.74</size>
+         <alignment>center</alignment>                       
+      </textlist>
+  </view>
+   
+   <view name="detailed">
+      <image name="md_image">
+	     <origin>0.5 0.5</origin>
+	     <pos>0.745 0.4915</pos>
+	     <maxSize>0.5167 0.6556</maxSize>       
+      </image>      
+   </view>
+
+   <view name="video">   
+      <video name="md_video">
+	     <origin>0.5 0.5</origin>
+	     <pos>0.745 0.4915</pos>
+	     <maxSize>0.5167 0.6556</maxSize> 
+         <delay>1</delay>
+         <zIndex>2</zIndex>         
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+      </video>             
+   </view>
+   
+   <view name="detailed,video">
+      <text name="md_lbl_releasedate, md_lbl_players, md_lbl_rating, md_rating, md_players, md_releasedate">
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>0.034</fontSize>
+      </text>
+      <text name="md_lbl_rating">
+         <origin>0.5 0.5</origin>
+         <pos>0.95 0.35</pos>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex>
+		 <visible>false</visible>
+      </text>   
+      <rating name="md_rating">
+         <origin>0.5 0.5</origin>       
+         <pos>0.77 0.35</pos>
+         <size>0.05 0.05</size>
+         <zIndex>2</zIndex>
+		 <visible>false</visible>
+      </rating>
+      <text name="md_lbl_players">
+         <origin>0.5 0.5</origin>
+         <pos>0.95 0.27</pos>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex> 
+		 <visible>false</visible>
+      </text>
+      <text name="md_players">
+         <origin>0.5 0.5</origin>
+         <pos>1.072 0.27</pos>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex>
+		 <visible>false</visible>
+      </text>
+      <text name="md_lbl_releasedate">
+         <origin>0.5 0.5</origin>
+         <pos>0.95 0.31</pos>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex>    
+		 <visible>false</visible>
+      </text>
+      <datetime name="md_releasedate">
+         <origin>0.5 0.5</origin>
+         <pos>1.072 0.31</pos>
+		 <format>%Y</format>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex>
+         <visible>false</visible>
+      </datetime>
+      <image name="md_marquee">
+         <pos>1 1</pos>
+         <origin>0.5 0.5</origin>
+         <maxSize>0.1 0.1</maxSize>
+         <zIndex>1</zIndex>    
+		 <visible>false</visible>
+      </image>
+      </view>
+	  
+  <view name="menu">
+	
+    <menuBackground name="menubg">
+      <color>2d2d2d</color>
+    </menuBackground>
+	
+	<menuText name="menutext, menutitle">
+      <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+      <fontSize>.039</fontSize>
+      <color>ffffff</color>
+    </menuText>
+	
+    <menuTextEdit name="menutextedit">
+      <inactive>./assets/extraimages/textinput_inactive.png</inactive>
+      <active>./assets/extraimages/textinput_active.png</active>
+    </menuTextEdit>
+	
+  </view>
+  
+</theme>

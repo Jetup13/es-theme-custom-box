@@ -1,0 +1,21 @@
+<!--
+theme name:     Custom Box
+Creator:        Matt Gonzales (Jetup)
+Insperation:    NES BOX Theme by Travis Wilson
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+   
+   <view name="system">
+      <image name="logobackground" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>     
+		 <zIndex>4</zIndex>
+         <path>./assets/logobackground/border.png</path>
+      </image>                             
+   </view>
+  
+</theme>

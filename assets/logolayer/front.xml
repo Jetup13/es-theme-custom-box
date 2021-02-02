@@ -1,0 +1,16 @@
+<!--
+theme name:     Custom Box
+Creator:        Matt Gonzales (Jetup)
+Insperation:    NES BOX Theme by Travis Wilson
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+   
+   <view name="system">
+      <carousel name="systemcarousel">
+       <zIndex>8</zIndex> 
+      </carousel>
+	  </view>
+</theme>
