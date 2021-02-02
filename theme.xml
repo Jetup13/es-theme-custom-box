@@ -8,7 +8,6 @@ Insperation:    NES BOX Theme by Travis Wilson
 <theme>
    <formatVersion>7</formatVersion>
    
-   
 
   <!--Variables such as theme configuration. Variables can be used to simplify theme construction-->
 
@@ -27,7 +26,7 @@ Insperation:    NES BOX Theme by Travis Wilson
 
  <subset name="Background" displayName="${BackgroundSubsetName}">
         <include name="crystal" displayName="${crystal}">./assets/backgrounds/crystal.xml</include>
-		<include name="clounds" displayName="${clouds}">./assets/backgrounds/clouds.xml</include>
+		<include name="clouds" displayName="${clouds}">./assets/backgrounds/clouds.xml</include>
         <include name="blank" displayName="${blank}">./assets/backgrounds/blank.xml</include>
  </subset>
  
