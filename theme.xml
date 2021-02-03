@@ -20,6 +20,8 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<LogoBackgroundColorSubsetName>Logo Background Color</LogoBackgroundColorSubsetName>
 		<HideCharactersSubsetName>Hide Characters</HideCharactersSubsetName>
 		<SystemInfoColorSubsetName>System Info Color</SystemInfoColorSubsetName>
+		<gamelistcolorSubsetName>Gamelist Color</gamelistcolorSubsetName>
+		<gamelistselectioncolorSubsetName>Gamelist Selection Color</gamelistselectioncolorSubsetName>
 </variables>
 
 <!--Subsets for variables. Subset are usefull to create multiple variations in a theme-->
@@ -55,8 +57,8 @@ Insperation:    NES BOX Theme by Travis Wilson
  </subset>
  
   <subset name="LogoLayer" displayName="${LogoLayerSubsetName}" appliesTo="system">
-		<include name="back" displayName="${back}">./assets/logolayer/back.xml</include>
         <include name="front" displayName="${front}">./assets/logolayer/front.xml</include>
+		<include name="back" displayName="${back}">./assets/logolayer/back.xml</include>
  </subset>
  
  <subset name="LogoBackground" displayName="${LogoBackgroundSubsetName}" appliesTo="system">
@@ -94,6 +96,29 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<include name="pink" displayName="${pink}">./assets/systeminfocolor/pink.xml</include>
 		<include name="indigo" displayName="${indigo}">./assets/systeminfocolor/indigo.xml</include>
 		<include name="grey" displayName="${grey}">./assets/systeminfocolor/grey.xml</include>
+ </subset>
+ 
+ <subset name="gamelistcolor" displayName="${gamelistcolorSubsetName}">
+        <include name="white" displayName="${white}">./assets/gamelistcolor/white.xml</include>
+		<include name="red" displayName="${red}">./assets/gamelistcolor/red.xml</include>
+        <include name="blue" displayName="${blue}">./assets/gamelistcolor/blue.xml</include>
+		<include name="green" displayName="${green}">./assets/gamelistcolor/green.xml</include>
+		<include name="yellow" displayName="${yellow}">./assets/gamelistcolor/yellow.xml</include>
+		<include name="purple" displayName="${purple}">./assets/gamelistcolor/purple.xml</include>
+		<include name="pink" displayName="${pink}">./assets/gamelistcolor/pink.xml</include>
+		<include name="indigo" displayName="${indigo}">./assets/gamelistcolor/indigo.xml</include>
+		<include name="grey" displayName="${grey}">./assets/gamelistcolor/grey.xml</include>
+ </subset>
+ 
+ <subset name="gamelistselectioncolor" displayName="${gamelistselectioncolorSubsetName}">
+		<include name="red" displayName="${red}">./assets/gamelistselectioncolor/red.xml</include>
+        <include name="blue" displayName="${blue}">./assets/gamelistselectioncolor/blue.xml</include>
+		<include name="green" displayName="${green}">./assets/gamelistselectioncolor/green.xml</include>
+		<include name="yellow" displayName="${yellow}">./assets/gamelistselectioncolor/yellow.xml</include>
+		<include name="purple" displayName="${purple}">./assets/gamelistselectioncolor/purple.xml</include>
+		<include name="pink" displayName="${pink}">./assets/gamelistselectioncolor/pink.xml</include>
+		<include name="indigo" displayName="${indigo}">./assets/gamelistselectioncolor/indigo.xml</include>
+		<include name="grey" displayName="${grey}">./assets/gamelistselectioncolor/grey.xml</include>
  </subset>
    
    <!--Theme Views-->
@@ -169,8 +194,6 @@ Insperation:    NES BOX Theme by Travis Wilson
   <view name="basic,detailed,video">
       <textlist name="gamelist">      
          <selectorColor>00000000</selectorColor>
-         <selectedColor>ff3a3a</selectedColor>
-         <primaryColor>ffffff</primaryColor>
          <secondaryColor>ca9d5f</secondaryColor>
          <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
          <fontSize>0.04</fontSize>
@@ -190,7 +213,7 @@ Insperation:    NES BOX Theme by Travis Wilson
    
   <view name="basic">
       <textlist name="gamelist">                          
-         <pos>0.2 0.19</pos>
+         <pos>0.2 0.15</pos>
          <size>.6 0.74</size>
          <alignment>center</alignment>                       
       </textlist>

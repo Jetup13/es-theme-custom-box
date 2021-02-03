@@ -1,6 +1,21 @@
+Darker
+
+Blue 0069B5
 Green B6FF00
 Grey A9A9A9
 Indigo 4B0082
 Pink FF23DC
 Purple B200FF
+Red B70000
 Yellow FFD800
+
+Lighter
+
+Blue 0078CF
+Green CCFF4D
+Grey C3C3C3
+Indigo 6800B5
+Pink FF56E4
+Purple C133FF
+Red FF3A3A
+Yellow FFE866
