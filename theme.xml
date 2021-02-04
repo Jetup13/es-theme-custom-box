@@ -12,6 +12,7 @@ Insperation:    NES BOX Theme by Travis Wilson
   <!--Variables such as theme configuration. Variables can be used to simplify theme construction-->
 
  <variables>
+        <SystemviewSubsetName>System View</SystemviewSubsetName>
 		<BackgroundSubsetName>Background</BackgroundSubsetName>
 		<BackgroundColorSubsetName>Background Color</BackgroundColorSubsetName>
 		<LogoColorSubsetName>Logo Color</LogoColorSubsetName>
@@ -25,6 +26,13 @@ Insperation:    NES BOX Theme by Travis Wilson
 </variables>
 
 <!--Subsets for variables. Subset are usefull to create multiple variations in a theme-->
+
+ <subset name="Systemview" displayName="${SystemviewSubsetName}">
+        <include name="default" displayName="${default}">./assets/systemview/default.xml</include>
+		<include name="default horizontal" displayName="${default horizontal}">./assets/systemview/defaulthorizontal.xml</include>
+		<include name="carousel" displayName="${carousel}">./assets/systemview/carousel.xml</include>
+		<include name="wheel" displayName="${wheel}">./assets/systemview/wheel.xml</include>
+ </subset>
 
  <subset name="Background" displayName="${BackgroundSubsetName}">
         <include name="crystal" displayName="${crystal}">./assets/backgrounds/crystal.xml</include>
@@ -96,6 +104,7 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<include name="pink" displayName="${pink}">./assets/systeminfocolor/pink.xml</include>
 		<include name="indigo" displayName="${indigo}">./assets/systeminfocolor/indigo.xml</include>
 		<include name="grey" displayName="${grey}">./assets/systeminfocolor/grey.xml</include>
+		<include name="hide" displayName="${hide}">./assets/systeminfocolor/hide.xml</include>
  </subset>
  
  <subset name="gamelistcolor" displayName="${gamelistcolorSubsetName}">
@@ -136,19 +145,10 @@ Insperation:    NES BOX Theme by Travis Wilson
    <!-- -->
    <!-- -->
    
+   <!--Check /assets/systemviews/ to edit system views to your liking -->
    
  <feature supported="carousel">
-   <view name="system">
-      <carousel name="systemcarousel">
-        <type>vertical</type>
-        <pos>0.0 0.0</pos>      
-        <size>1.0 1.0</size>
-        <logoScale>1</logoScale>         
-        <logoSize>1 1</logoSize>
-        <color>00000000</color>
-        <maxLogoCount>1</maxLogoCount>       
-      </carousel>
-	  
+    <view name="system">
 	<image name="logo">
 		 <path>./logos/white/${system.theme}.png</path>
 	</image>
@@ -168,31 +168,31 @@ Insperation:    NES BOX Theme by Travis Wilson
 	     <fontSize>0.05</fontSize>
          <zIndex>5</zIndex>	     
       </text>            
-   </view>
+    </view>
  </feature>
 
  <view name="system">
-      <helpsystem name="help">
+     <helpsystem name="help">
          <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
          <fontSize>0.028</fontSize>     
          <pos>0.02 0.948</pos>      
          <textColor>FFFFFF</textColor>
          <iconColor>FFFFFF</iconColor>
-      </helpsystem>
+     </helpsystem>
   </view>  
 
   <view name="detailed,video,basic">
-      <helpsystem name="help">
+     <helpsystem name="help">
          <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
          <fontSize>0.028</fontSize>     
          <pos>0.02 0.948</pos>      
          <textColor>FFFFFF</textColor>
          <iconColor>FFFFFF</iconColor>
-      </helpsystem>
+     </helpsystem>
   </view>  
 
   <view name="basic,detailed,video">
-      <textlist name="gamelist">      
+     <textlist name="gamelist">      
          <selectorColor>00000000</selectorColor>
          <secondaryColor>ca9d5f</secondaryColor>
          <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
@@ -200,35 +200,35 @@ Insperation:    NES BOX Theme by Travis Wilson
          <forceUppercase>1</forceUppercase>
          <scrollSound>./_inc/sounds/Move.wav</scrollSound>
          <zIndex>3</zIndex>                          
-      </textlist>
+     </textlist>
   </view> 
    
   <view name="detailed,video">
-      <textlist name="gamelist">                          
+     <textlist name="gamelist">                          
          <pos>0.0 0.025</pos>
          <size>0.48 0.9</size>
          <alignment>left</alignment>                       
-      </textlist>
+     </textlist>
   </view>
    
   <view name="basic">
-      <textlist name="gamelist">                          
+     <textlist name="gamelist">                          
          <pos>0.2 0.15</pos>
          <size>.6 0.74</size>
          <alignment>center</alignment>                       
-      </textlist>
+     </textlist>
   </view>
    
    <view name="detailed">
-      <image name="md_image">
+     <image name="md_image">
 	     <origin>0.5 0.5</origin>
 	     <pos>0.745 0.4915</pos>
 	     <maxSize>0.5167 0.6556</maxSize>       
-      </image>      
+     </image>      
    </view>
 
    <view name="video">   
-      <video name="md_video">
+     <video name="md_video">
 	     <origin>0.5 0.5</origin>
 	     <pos>0.745 0.4915</pos>
 	     <maxSize>0.5167 0.6556</maxSize> 
@@ -236,54 +236,54 @@ Insperation:    NES BOX Theme by Travis Wilson
          <zIndex>2</zIndex>         
          <showSnapshotNoVideo>true</showSnapshotNoVideo>
          <showSnapshotDelay>true</showSnapshotDelay>
-      </video>             
+     </video>             
    </view>
    
    <view name="detailed,video">
-      <text name="md_lbl_releasedate, md_lbl_players, md_lbl_rating, md_rating, md_players, md_releasedate">
+     <text name="md_lbl_releasedate, md_lbl_players, md_lbl_rating, md_rating, md_players, md_releasedate">
          <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
          <fontSize>0.034</fontSize>
-      </text>
-      <text name="md_lbl_rating">
+     </text>
+     <text name="md_lbl_rating">
          <origin>0.5 0.5</origin>
          <pos>0.95 0.35</pos>
          <size>0.6 0.6</size>
          <color>ffffff</color>
          <zIndex>2</zIndex>
 		 <visible>false</visible>
-      </text>   
-      <rating name="md_rating">
+     </text>   
+     <rating name="md_rating">
          <origin>0.5 0.5</origin>       
          <pos>0.77 0.35</pos>
          <size>0.05 0.05</size>
          <zIndex>2</zIndex>
 		 <visible>false</visible>
-      </rating>
-      <text name="md_lbl_players">
+     </rating>
+     <text name="md_lbl_players">
          <origin>0.5 0.5</origin>
          <pos>0.95 0.27</pos>
          <size>0.6 0.6</size>
          <color>ffffff</color>
          <zIndex>2</zIndex> 
 		 <visible>false</visible>
-      </text>
-      <text name="md_players">
+     </text>
+     <text name="md_players">
          <origin>0.5 0.5</origin>
          <pos>1.072 0.27</pos>
          <size>0.6 0.6</size>
          <color>ffffff</color>
          <zIndex>2</zIndex>
 		 <visible>false</visible>
-      </text>
-      <text name="md_lbl_releasedate">
+     </text>
+     <text name="md_lbl_releasedate">
          <origin>0.5 0.5</origin>
          <pos>0.95 0.31</pos>
          <size>0.6 0.6</size>
          <color>ffffff</color>
          <zIndex>2</zIndex>    
 		 <visible>false</visible>
-      </text>
-      <datetime name="md_releasedate">
+     </text>
+     <datetime name="md_releasedate">
          <origin>0.5 0.5</origin>
          <pos>1.072 0.31</pos>
 		 <format>%Y</format>
@@ -291,31 +291,31 @@ Insperation:    NES BOX Theme by Travis Wilson
          <color>ffffff</color>
          <zIndex>2</zIndex>
          <visible>false</visible>
-      </datetime>
-      <image name="md_marquee">
+     </datetime>
+     <image name="md_marquee">
          <pos>1 1</pos>
          <origin>0.5 0.5</origin>
          <maxSize>0.1 0.1</maxSize>
          <zIndex>1</zIndex>    
 		 <visible>false</visible>
-      </image>
-      </view>
+     </image>
+     </view>
 	  
   <view name="menu">
 	
     <menuBackground name="menubg">
-      <color>2d2d2d</color>
+         <color>2d2d2d</color>
     </menuBackground>
 	
 	<menuText name="menutext, menutitle">
-      <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
-      <fontSize>.039</fontSize>
-      <color>ffffff</color>
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>.039</fontSize>
+         <color>ffffff</color>
     </menuText>
 	
     <menuTextEdit name="menutextedit">
-      <inactive>./assets/extraimages/textinput_inactive.png</inactive>
-      <active>./assets/extraimages/textinput_active.png</active>
+         <inactive>./assets/extraimages/textinput_inactive.png</inactive>
+         <active>./assets/extraimages/textinput_active.png</active>
     </menuTextEdit>
 	
   </view>
