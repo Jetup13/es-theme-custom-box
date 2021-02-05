@@ -1,0 +1,94 @@
+<!--
+theme name:     Custom Box
+Creator:        Matt Gonzales (Jetup)
+Insperation:    NES BOX Theme by Travis Wilson
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+
+  <view name="basic,detailed,video">
+     <textlist name="gamelist">      
+         <selectorColor>00000000</selectorColor>
+         <secondaryColor>ca9d5f</secondaryColor>
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>0.04</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound>./_inc/sounds/Move.wav</scrollSound>
+         <zIndex>3</zIndex>                          
+     </textlist>
+  </view> 
+   
+  <view name="detailed,video">
+     <textlist name="gamelist">                          
+         <pos>0.0 0.025</pos>
+         <size>0.48 0.9</size>
+         <alignment>left</alignment>                       
+     </textlist>
+  </view>
+   
+  <view name="basic">
+     <textlist name="gamelist">                          
+         <pos>0.2 0.15</pos>
+         <size>.6 0.74</size>
+         <alignment>center</alignment>                       
+     </textlist>
+  </view>
+   
+   <view name="detailed">
+     <image name="md_image">
+	     <origin>0.5 0.5</origin>
+	     <pos>0.745 0.4915</pos>
+	     <maxSize>0.5167 0.6556</maxSize>       
+     </image>      
+   </view>
+
+   <view name="video">   
+     <video name="md_video">
+	     <origin>0.5 0.5</origin>
+	     <pos>0.745 0.4915</pos>
+	     <maxSize>0.5167 0.6556</maxSize> 
+         <delay>1</delay>
+         <zIndex>2</zIndex>         
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+     </video>             
+   </view>
+   
+   <view name="detailed,video">
+     <text name="md_lbl_releasedate, md_lbl_players, md_lbl_rating, md_rating, md_players, md_releasedate">
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>0.034</fontSize>
+     </text>
+	 
+	 <text name="md_description">
+		 <visible>false</visible>
+      </text>
+	
+	  <text name="md_lbl_releasedate">
+		 <visible>false</visible>  
+     </text>
+     <datetime name="md_releasedate">
+		 <visible>false</visible>
+     </datetime>
+	 
+     <text name="md_lbl_rating">
+		 <visible>false</visible>
+     </text>   
+     <rating name="md_rating">
+		 <visible>false</visible>
+     </rating>
+     <text name="md_lbl_players">
+		 <visible>false</visible>
+     </text>
+     <text name="md_players">
+		 <visible>false</visible>
+     </text>
+     <image name="md_marquee">
+		 <visible>false</visible>
+     </image>
+	 
+     </view>
+  
+</theme>

@@ -1,0 +1,112 @@
+<!--
+theme name:     Custom Box
+Creator:        Matt Gonzales (Jetup)
+Insperation:    NES BOX Theme by Travis Wilson
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+
+  <view name="basic,detailed,video">
+     <textlist name="gamelist">      
+         <selectorColor>00000000</selectorColor>
+         <secondaryColor>ca9d5f</secondaryColor>
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>0.04</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound>./_inc/sounds/Move.wav</scrollSound>
+         <zIndex>3</zIndex>                          
+     </textlist>
+  </view> 
+   
+  <view name="detailed,video">
+     <textlist name="gamelist">                          
+         <pos>0.0 0.025</pos>
+         <size>0.48 0.9</size>
+         <alignment>left</alignment>                       
+     </textlist>
+  </view>
+   
+  <view name="basic">
+     <textlist name="gamelist">                          
+         <pos>0.2 0.15</pos>
+         <size>.6 0.74</size>
+         <alignment>center</alignment>                       
+     </textlist>
+  </view>
+   
+   <view name="detailed">
+     <image name="md_image">
+	     <origin>0.5 0.5</origin>
+	     <pos>0.730 0.45</pos>
+	     <maxSize>0.5167 0.6556</maxSize>       
+     </image>      
+   </view>
+
+   <view name="video">   
+     <video name="md_video">
+	     <origin>0.5 0.5</origin>
+	     <pos>0.730 0.45</pos>
+	     <maxSize>0.5167 0.6556</maxSize> 
+         <delay>1</delay>
+         <zIndex>2</zIndex>         
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+     </video>             
+   </view>
+   
+   <view name="detailed,video">
+     <text name="md_lbl_releasedate, md_lbl_players, md_lbl_rating, md_rating, md_players, md_releasedate">
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>0.034</fontSize>
+     </text>
+	 
+	 <text name="md_description">
+        <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+	    <color>ffffff</color>
+        <fontSize>0.03</fontSize>
+	    <alignment>left</alignment>
+        <forceUppercase>0</forceUppercase>
+        <lineSpacing>1</lineSpacing>
+	    <pos>0.52 0.787</pos>
+	    <size>0.464 0.1111</size>
+      </text>
+	
+	  <text name="md_lbl_releasedate">
+         <origin>0.5 0.5</origin>
+         <pos>0.818 0.05</pos>
+		 <alignment>left</alignment>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex>    
+     </text>
+     <datetime name="md_releasedate">
+         <origin>0.5 0.5</origin>
+         <pos>0.960 0.05</pos>
+		 <alignment>left</alignment>
+		 <format>%Y</format>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex>
+     </datetime>
+	 
+     <text name="md_lbl_rating">
+		 <visible>false</visible>
+     </text>   
+     <rating name="md_rating">
+		 <visible>false</visible>
+     </rating>
+     <text name="md_lbl_players">
+		 <visible>false</visible>
+     </text>
+     <text name="md_players">
+		 <visible>false</visible>
+     </text>
+     <image name="md_marquee">
+		 <visible>false</visible>
+     </image>
+	 
+     </view>
+  
+</theme>

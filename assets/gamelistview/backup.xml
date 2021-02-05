@@ -1,0 +1,121 @@
+<!--
+theme name:     Custom Box
+Creator:        Matt Gonzales (Jetup)
+Insperation:    NES BOX Theme by Travis Wilson
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+
+  <view name="basic,detailed,video">
+     <textlist name="gamelist">      
+         <selectorColor>00000000</selectorColor>
+         <secondaryColor>ca9d5f</secondaryColor>
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>0.04</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound>./_inc/sounds/Move.wav</scrollSound>
+         <zIndex>3</zIndex>                          
+     </textlist>
+  </view> 
+   
+  <view name="detailed,video">
+     <textlist name="gamelist">                          
+         <pos>0.0 0.025</pos>
+         <size>0.48 0.9</size>
+         <alignment>left</alignment>                       
+     </textlist>
+  </view>
+   
+  <view name="basic">
+     <textlist name="gamelist">                          
+         <pos>0.2 0.15</pos>
+         <size>.6 0.74</size>
+         <alignment>center</alignment>                       
+     </textlist>
+  </view>
+   
+   <view name="detailed">
+     <image name="md_image">
+	     <origin>0.5 0.5</origin>
+	     <pos>0.745 0.4915</pos>
+	     <maxSize>0.5167 0.6556</maxSize>       
+     </image>      
+   </view>
+
+   <view name="video">   
+     <video name="md_video">
+	     <origin>0.5 0.5</origin>
+	     <pos>0.745 0.4915</pos>
+	     <maxSize>0.5167 0.6556</maxSize> 
+         <delay>1</delay>
+         <zIndex>2</zIndex>         
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+     </video>             
+   </view>
+   
+   <view name="detailed,video">
+     <text name="md_lbl_releasedate, md_lbl_players, md_lbl_rating, md_rating, md_players, md_releasedate">
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>0.034</fontSize>
+     </text>
+     <text name="md_lbl_rating">
+         <origin>0.5 0.5</origin>
+         <pos>0.95 0.35</pos>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex>
+		 <visible>false</visible>
+     </text>   
+     <rating name="md_rating">
+         <origin>0.5 0.5</origin>       
+         <pos>0.77 0.35</pos>
+         <size>0.05 0.05</size>
+         <zIndex>2</zIndex>
+		 <visible>false</visible>
+     </rating>
+     <text name="md_lbl_players">
+         <origin>0.5 0.5</origin>
+         <pos>0.95 0.27</pos>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex> 
+		 <visible>false</visible>
+     </text>
+     <text name="md_players">
+         <origin>0.5 0.5</origin>
+         <pos>1.072 0.27</pos>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex>
+		 <visible>false</visible>
+     </text>
+     <text name="md_lbl_releasedate">
+         <origin>0.5 0.5</origin>
+         <pos>0.95 0.31</pos>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex>    
+		 <visible>false</visible>
+     </text>
+     <datetime name="md_releasedate">
+         <origin>0.5 0.5</origin>
+         <pos>1.072 0.31</pos>
+		 <format>%Y</format>
+         <size>0.6 0.6</size>
+         <color>ffffff</color>
+         <zIndex>2</zIndex>
+         <visible>false</visible>
+     </datetime>
+     <image name="md_marquee">
+         <pos>1 1</pos>
+         <origin>0.5 0.5</origin>
+         <maxSize>0.1 0.1</maxSize>
+         <zIndex>1</zIndex>    
+		 <visible>false</visible>
+     </image>
+     </view>
+  
+</theme>

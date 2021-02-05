@@ -1,0 +1,24 @@
+<!--
+theme name:     Custom Box
+Creator:        Matt Gonzales (Jetup)
+Insperation:    NES BOX Theme by Travis Wilson
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+   
+ <view name="system">
+     <helpsystem name="help">     
+         <textColor>FFD800</textColor>
+         <iconColor>FFD800</iconColor>
+     </helpsystem>
+  </view>  
+
+  <view name="detailed,video,basic">
+     <helpsystem name="help">   
+         <textColor>FFD800</textColor>
+         <iconColor>FFD800</iconColor>
+     </helpsystem>
+  </view>  
+</theme>
