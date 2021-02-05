@@ -64,7 +64,6 @@ Insperation:    NES BOX Theme by Travis Wilson
 	 
 	 <text name="md_description">
         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
-	    <color>ffffff</color>
         <fontSize>0.03</fontSize>
 	    <alignment>left</alignment>
         <forceUppercase>0</forceUppercase>
@@ -78,7 +77,6 @@ Insperation:    NES BOX Theme by Travis Wilson
          <pos>0.818 0.05</pos>
 		 <alignment>left</alignment>
          <size>0.6 0.6</size>
-         <color>ffffff</color>
          <zIndex>2</zIndex>    
      </text>
      <datetime name="md_releasedate">
@@ -87,7 +85,6 @@ Insperation:    NES BOX Theme by Travis Wilson
 		 <alignment>left</alignment>
 		 <format>%Y</format>
          <size>0.6 0.6</size>
-         <color>ffffff</color>
          <zIndex>2</zIndex>
      </datetime>
 	 

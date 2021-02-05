@@ -8,7 +8,7 @@ Insperation:    NES BOX Theme by Travis Wilson
 <theme>
    <formatVersion>7</formatVersion>
    
-   <view name="system,detailed,video,basic">
+   <view name="system,detailed,video,basic,grid">
       <image name="background" extra="true">
          <origin>0 0</origin>
          <pos>0 0</pos>

@@ -1,0 +1,25 @@
+<!--
+theme name:     Custom Box
+Creator:        Matt Gonzales (Jetup)
+Insperation:    NES BOX Theme by Travis Wilson
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+   
+   <view name="detailed,video">
+	 <text name="md_description">
+	    <color>B200FF</color>
+      </text>
+	
+	  <text name="md_lbl_releasedate">
+         <color>B200FF</color>    
+     </text>
+     <datetime name="md_releasedate">
+         <color>B200FF</color>
+     </datetime>
+	 
+     </view>
+  
+</theme>

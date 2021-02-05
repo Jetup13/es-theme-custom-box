@@ -25,6 +25,9 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<gamelistviewSubsetName>Gamelist Views</gamelistviewSubsetName>
 		<gamelistcolorSubsetName>Gamelist Color</gamelistcolorSubsetName>
 		<gamelistselectioncolorSubsetName>Gamelist Selection Color</gamelistselectioncolorSubsetName>
+		<MetadatacolorSubsetName>Metadata Color</MetadatacolorSubsetName>
+		<videoboxesSubsetName>Videos View</videoboxesSubsetName>
+		<blinkBorderSubsetName>Blinking Borders</blinkBorderSubsetName>
 </variables>
 
 <!--Subsets for variables. Subset are usefull to create multiple variations in a theme-->
@@ -42,7 +45,7 @@ Insperation:    NES BOX Theme by Travis Wilson
         <include name="blank" displayName="${blank}">./assets/backgrounds/blank.xml</include>
  </subset>
  
- <subset name="BackgroundColor" displayName="${BackgroundColorSubsetName}" appliesTo="system,detailed,video,basic">
+ <subset name="BackgroundColor" displayName="${BackgroundColorSubsetName}">
         <include name="off" displayName="${off}"/>
 		<include name="red" displayName="${red}">./assets/colorbackgrounds/red.xml</include>
         <include name="blue" displayName="${blue}">./assets/colorbackgrounds/blue.xml</include>
@@ -149,6 +152,41 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<include name="grey" displayName="${grey}">./assets/gamelistselectioncolor/grey.xml</include>
  </subset>
  
+ <subset name="Metadatacolor" displayName="${MetadatacolorSubsetName}">
+        <include name="white" displayName="${white}">./assets/metadatacolor/white.xml</include>
+		<include name="red" displayName="${red}">./assets/metadatacolor/red.xml</include>
+        <include name="blue" displayName="${blue}">./assets/metadatacolor/blue.xml</include>
+		<include name="green" displayName="${green}">./assets/metadatacolor/green.xml</include>
+		<include name="yellow" displayName="${yellow}">./assets/metadatacolor/yellow.xml</include>
+		<include name="purple" displayName="${purple}">./assets/metadatacolor/purple.xml</include>
+		<include name="pink" displayName="${pink}">./assets/metadatacolor/pink.xml</include>
+		<include name="indigo" displayName="${indigo}">./assets/metadatacolor/indigo.xml</include>
+		<include name="grey" displayName="${grey}">./assets/metadatacolor/grey.xml</include>
+ </subset>
+ 
+ <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="grid">
+        <include name="off" displayName="${off}"/>
+        <include name="video in box" displayName="${box}">./assets/gridview/videoinbox.xml</include>
+		<include name="video in background" displayName="${video back}">./assets/gridview/videoinbackground.xml</include>
+		<include name="video fade in" displayName="${fade in video}">./assets/gridview/videofadein.xml</include>
+ </subset>
+	
+ <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="grid">
+        <include name="no" displayName="${no}"/>
+        <include name="white" displayName="${white}">./assets/gridview/blinkcolors/white.xml</include>
+		<include name="red" displayName="${red}">./assets/gridview/blinkcolors/red.xml</include>
+        <include name="blue" displayName="${blue}">./assets/gridview/blinkcolors/blue.xml</include>
+		<include name="green" displayName="${green}">./assets/gridview/blinkcolors/green.xml</include>
+		<include name="yellow" displayName="${yellow}">./assets/gridview/blinkcolors/yellow.xml</include>
+		<include name="purple" displayName="${purple}">./assets/gridview/blinkcolors/purple.xml</include>
+		<include name="pink" displayName="${pink}">./assets/gridview/blinkcolors/pink.xml</include>
+		<include name="indigo" displayName="${indigo}">./assets/gridview/blinkcolors/indigo.xml</include>
+		<include name="grey" displayName="${grey}">./assets/gridview/blinkcolors/grey.xml</include>
+ </subset>
+ 
+   <!--Extra Gamelist Views-->
+   <include>./assets/extraviews/grid.xml</include>
+ 
    
    <!--Theme Views-->
    <!--view name="system" is used for the system selection-->
@@ -201,7 +239,7 @@ Insperation:    NES BOX Theme by Travis Wilson
      </helpsystem>
   </view>  
 
-  <view name="detailed,video,basic">
+  <view name="detailed,video,basic,grid">
      <helpsystem name="help">
          <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
          <fontSize>0.028</fontSize>     

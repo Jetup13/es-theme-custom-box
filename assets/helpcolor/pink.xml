@@ -15,7 +15,7 @@ Insperation:    NES BOX Theme by Travis Wilson
      </helpsystem>
   </view>  
 
-  <view name="detailed,video,basic">
+  <view name="detailed,video,basic,grid">
      <helpsystem name="help">   
          <textColor>FF23DC</textColor>
          <iconColor>FF23DC</iconColor>

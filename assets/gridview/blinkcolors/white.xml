@@ -1,0 +1,22 @@
+<!--
+theme name:		Switch
+version:		2.0
+author:			Lilbud
+email:			bvw20002010@gmail.com
+license:		creative commons CC-BY-NC-SA
+based on:       Switch Theme for Launchbox by Grila
+-->
+
+  
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  
+  <view name="grid">
+	<ninepatch name="gridtile.background:selected">
+      <animateColor>FFFFFF</animateColor>
+      <animateColorTime>800</animateColorTime>
+    </ninepatch>
+    </view>
+	
+</theme>

@@ -1,0 +1,92 @@
+<!--
+theme name:     Custom Box
+Creator:        Matt Gonzales (Jetup)
+Insperation:    NES BOX Theme by Travis Wilson
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+ 
+   
+<view name="grid">
+	
+    <imagegrid name="gamegrid">
+		<margin>0.050 0.010</margin>
+        <pos>0.025 0.10</pos>
+        <size>0.950 0.84</size>
+	    <scrollDirection>horizontal</scrollDirection>
+		<autoLayout>3 1</autoLayout>
+		<autoLayoutSelectedZoom>1.00</autoLayoutSelectedZoom>
+		<centerSelection>true</centerSelection>
+		<scrollLoop>true</scrollLoop>
+		<scrollSound>./assets/Move.wav</scrollSound>
+    </imagegrid>
+	
+    <text name="gridtile">
+        <color>FFFFFF</color>
+        <backgroundColor>00000000</backgroundColor>
+        <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+        <fontSize>0.030</fontSize>
+	    <alignment>center</alignment>
+        <glowColor>00000060</glowColor>
+        <glowSize>1</glowSize>
+	    <visible>false</visible>
+    </text>
+		
+	<text name="md_name">
+        <pos>0.034 0.05</pos>
+	    <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+        <fontSize>0.030</fontSize>
+        <size>0.92 0.10</size>
+        <alignment>left</alignment>
+    </text>
+		
+	<image name="logo">
+	    <color>00000000</color>
+	    <path>./assets/box.png</path>
+		<pos>1 1</pos>
+	</image>
+
+    <gridtile name="default">
+        <backgroundColor>FFFFFF00</backgroundColor>
+        <backgroundCornerSize>9 9</backgroundCornerSize>
+        <selectionMode>image</selectionMode>
+        <padding>5 5</padding>
+    </gridtile>
+	
+    <text name="md_description">
+		 <visible>false</visible>
+    </text>
+	
+	<text name="md_lbl_releasedate">
+		 <visible>false</visible>  
+    </text>
+	
+    <datetime name="md_releasedate">
+		 <visible>false</visible>
+    </datetime>
+	 
+    <text name="md_lbl_rating">
+		 <visible>false</visible>
+    </text>  
+	 
+    <rating name="md_rating">
+		 <visible>false</visible>
+    </rating>
+	
+    <text name="md_lbl_players">
+		 <visible>false</visible>
+    </text>
+     
+	<text name="md_players">
+		 <visible>false</visible>
+    </text>
+	
+    <image name="md_marquee">
+		 <visible>false</visible>
+    </image>
+	
+    </view>
+  
+</theme>

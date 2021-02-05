@@ -1,0 +1,27 @@
+<!--
+theme name:		Switch
+version:		2.0
+author:			Lilbud
+email:			bvw20002010@gmail.com
+license:		creative commons CC-BY-NC-SA
+based on:       Switch Theme for Launchbox by Grila
+-->
+
+  
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  
+  <customView name="grid">
+	
+    <video name="md_video">
+		<pos>0.5 0.5</pos>
+		<minSize>1 1</minSize>
+		<origin>0.5 0.5</origin>
+		<delay>1.5</delay>
+        <zIndex>11</zIndex>
+	</video>
+	
+  </customView>
+  
+</theme>
