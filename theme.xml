@@ -26,6 +26,7 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<gamelistcolorSubsetName>Gamelist Color</gamelistcolorSubsetName>
 		<gamelistselectioncolorSubsetName>Gamelist Selection Color</gamelistselectioncolorSubsetName>
 		<MetadatacolorSubsetName>Metadata Color</MetadatacolorSubsetName>
+		<GamenamecolorSubsetName>Game Name Color</GamenamecolorSubsetName>
 		<videoboxesSubsetName>Videos View</videoboxesSubsetName>
 		<blinkBorderSubsetName>Blinking Borders</blinkBorderSubsetName>
 </variables>
@@ -164,11 +165,24 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<include name="grey" displayName="${grey}">./assets/metadatacolor/grey.xml</include>
  </subset>
  
+ <subset name="Gamenamecolor" displayName="${GamenamecolorSubsetName}" appliesTo="grid">
+        <include name="white" displayName="${white}">./assets/gridview/namecolors/white.xml</include>
+		<include name="red" displayName="${red}">./assets/gridview/namecolors/red.xml</include>
+        <include name="blue" displayName="${blue}">./assets/gridview/namecolors/blue.xml</include>
+		<include name="green" displayName="${green}">./assets/gridview/namecolors/green.xml</include>
+		<include name="yellow" displayName="${yellow}">./assets/gridview/namecolors/yellow.xml</include>
+		<include name="purple" displayName="${purple}">./assets/gridview/namecolors/purple.xml</include>
+		<include name="pink" displayName="${pink}">./assets/gridview/namecolors/pink.xml</include>
+		<include name="indigo" displayName="${indigo}">./assets/gridview/namecolors/indigo.xml</include>
+		<include name="grey" displayName="${grey}">./assets/gridview/namecolors/grey.xml</include>
+ </subset>
+ 
  <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="grid">
         <include name="off" displayName="${off}"/>
         <include name="video in box" displayName="${box}">./assets/gridview/videoinbox.xml</include>
 		<include name="video in background" displayName="${video back}">./assets/gridview/videoinbackground.xml</include>
 		<include name="video fade in" displayName="${fade in video}">./assets/gridview/videofadein.xml</include>
+		<include name="video fade in (stretched)" displayName="${fade in video (stretched)}">./assets/gridview/videofadeinstretched.xml</include>
  </subset>
 	
  <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="grid">
