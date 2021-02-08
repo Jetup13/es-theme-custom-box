@@ -20,7 +20,6 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<autoLayoutSelectedZoom>1.00</autoLayoutSelectedZoom>
 		<centerSelection>true</centerSelection>
 		<scrollLoop>true</scrollLoop>
-		<scrollSound>./assets/Move.wav</scrollSound>
     </imagegrid>
 	
     <text name="gridtile">

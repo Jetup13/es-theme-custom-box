@@ -1,0 +1,23 @@
+<!--
+theme name:     Custom Box
+Creator:        Matt Gonzales (Jetup)
+Insperation:    NES BOX Theme by Travis Wilson
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+
+  <view name="basic,detailed,video,grid">
+     <textlist name="gamelist">      
+         <scrollSound>./assets/soundeffects/dc.wav</scrollSound>                          
+     </textlist>
+  </view> 
+  
+  <view name="grid">
+      <imagegrid name="gamegrid">
+		<scrollSound>./assets/soundeffects/dc.wav</scrollSound>  
+    </imagegrid>
+  </view>
+  
+</theme>

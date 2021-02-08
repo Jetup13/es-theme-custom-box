@@ -19,7 +19,7 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<LogoLayerSubsetName>Logo Layer</LogoLayerSubsetName>
 		<LogoBackgroundSubsetName>Logo Background</LogoBackgroundSubsetName>
 		<LogoBackgroundColorSubsetName>Logo Background Color</LogoBackgroundColorSubsetName>
-		<HideCharactersSubsetName>Hide Characters</HideCharactersSubsetName>
+		<CharactersSubsetName>Characters</CharactersSubsetName>
 		<SystemInfoColorSubsetName>System Info Color</SystemInfoColorSubsetName>
 		<helpcolorSubsetName>Help Color</helpcolorSubsetName>
 		<gamelistviewSubsetName>Gamelist Views</gamelistviewSubsetName>
@@ -29,6 +29,8 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<GamenamecolorSubsetName>Game Name Color</GamenamecolorSubsetName>
 		<videoboxesSubsetName>Videos View</videoboxesSubsetName>
 		<blinkBorderSubsetName>Blinking Borders</blinkBorderSubsetName>
+		<selectionsoundSubsetName>Selection Sound</selectionsoundSubsetName>
+		<clockcolorSubsetName>Clock Color</clockcolorSubsetName>
 </variables>
 
 <!--Subsets for variables. Subset are usefull to create multiple variations in a theme-->
@@ -36,12 +38,17 @@ Insperation:    NES BOX Theme by Travis Wilson
  <subset name="Systemview" displayName="${SystemviewSubsetName}">
         <include name="default" displayName="${default}">./assets/systemview/default.xml</include>
 		<include name="default horizontal" displayName="${default horizontal}">./assets/systemview/defaulthorizontal.xml</include>
+		<include name="left horizontal" displayName="${left horizontal}">./assets/systemview/lefthorizontal.xml</include>
 		<include name="carousel" displayName="${carousel}">./assets/systemview/carousel.xml</include>
 		<include name="wheel" displayName="${wheel}">./assets/systemview/wheel.xml</include>
  </subset>
 
  <subset name="Background" displayName="${BackgroundSubsetName}">
         <include name="crystal" displayName="${crystal}">./assets/backgrounds/crystal.xml</include>
+		<include name="space" displayName="${space}">./assets/backgrounds/space.xml</include>
+		<include name="squares" displayName="${squares}">./assets/backgrounds/squares.xml</include>
+		<include name="flowers" displayName="${flowers}">./assets/backgrounds/flowers.xml</include>
+		<include name="window" displayName="${window}">./assets/backgrounds/window.xml</include>
 		<include name="clouds" displayName="${clouds}">./assets/backgrounds/clouds.xml</include>
         <include name="blank" displayName="${blank}">./assets/backgrounds/blank.xml</include>
  </subset>
@@ -95,9 +102,10 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<include name="grey" displayName="${grey}">./assets/colorlogobackground/grey.xml</include>
  </subset>
  
-  <subset name="HideCharacters" displayName="${HideCharactersSubsetName}" appliesTo="system">
-        <include name="no" displayName="${no}"/>
-		<include name="yes" displayName="${yes}">./assets/characters/hide.xml</include>
+  <subset name="Characters" displayName="${CharactersSubsetName}" appliesTo="system">
+		<include name="characters" displayName="${characters}">./assets/characters/characters.xml</include>
+		<include name="slice" displayName="${slice}">./assets/characters/slice.xml</include>
+		<include name="hide" displayName="${hide}">./assets/characters/hide.xml</include>
  </subset>
  
  <subset name="SystemInfoColor" displayName="${SystemInfoColorSubsetName}" appliesTo="system">
@@ -198,6 +206,25 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<include name="grey" displayName="${grey}">./assets/gridview/blinkcolors/grey.xml</include>
  </subset>
  
+  <subset name="selectionsound" displayName="${selectionsoundSubsetName}">
+        <include name="off" displayName="${off}"/>
+        <include name="dc" displayName="${dc}">./assets/soundeffects/dc.xml</include>
+		<include name="nx" displayName="${nx}">./assets/soundeffects/nx.xml</include>
+		<include name="dxb" displayName="${dxb}">./assets/soundeffects/dxb.xml</include>
+ </subset>
+ 
+ <subset name="clockcolor" displayName="${clockcolorSubsetName}">
+        <include name="white" displayName="${white}">./assets/clockcolor/white.xml</include>
+		<include name="red" displayName="${red}">./assets/clockcolor/red.xml</include>
+        <include name="blue" displayName="${blue}">./assets/clockcolor/blue.xml</include>
+		<include name="green" displayName="${green}">./assets/clockcolor/green.xml</include>
+		<include name="yellow" displayName="${yellow}">./assets/clockcolor/yellow.xml</include>
+		<include name="purple" displayName="${purple}">./assets/clockcolor/purple.xml</include>
+		<include name="pink" displayName="${pink}">./assets/clockcolor/pink.xml</include>
+		<include name="indigo" displayName="${indigo}">./assets/clockcolor/indigo.xml</include>
+		<include name="grey" displayName="${grey}">./assets/clockcolor/grey.xml</include>
+ </subset>
+ 
    <!--Extra Gamelist Views-->
    <include>./assets/extraviews/grid.xml</include>
  
@@ -230,7 +257,6 @@ Insperation:    NES BOX Theme by Travis Wilson
          <pos>0 0</pos>
          <size>1 1</size>
 		 <zIndex>6</zIndex>
-         <path>./characters/${system.theme}.png</path>
       </image>
 	  
       <text name="systemInfo">     
@@ -239,7 +265,7 @@ Insperation:    NES BOX Theme by Travis Wilson
          <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
 	     <fontSize>0.05</fontSize>
          <zIndex>5</zIndex>	     
-      </text>            
+      </text> 
     </view>
  </feature>
 
@@ -281,5 +307,16 @@ Insperation:    NES BOX Theme by Travis Wilson
     </menuTextEdit>
 	
   </view>
+  
+  	<view name="screen">
+      <text name="clock">
+	  <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+      <fontSize>0.034</fontSize>
+      <pos>0.91 0.02</pos>
+      <size>0.58 0.058</size>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+    </text>
+    </view>
   
 </theme>

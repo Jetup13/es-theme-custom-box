@@ -15,7 +15,6 @@ Insperation:    NES BOX Theme by Travis Wilson
          <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
          <fontSize>0.04</fontSize>
          <forceUppercase>1</forceUppercase>
-         <scrollSound>./_inc/sounds/Move.wav</scrollSound>
          <zIndex>3</zIndex>                          
      </textlist>
   </view> 
