@@ -11,7 +11,12 @@ Insperation:    NES BOX Theme by Travis Wilson
    <view name="system" extra="true">
       <image name="logo">
          <color>A9A9A9</color>
-      </image>                             
+      </image>
+
+	  <text name="logoText">
+         <color>A9A9A9</color>
+      </text>
+	  
    </view>
   
 </theme>

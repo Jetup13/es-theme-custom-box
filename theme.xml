@@ -66,7 +66,7 @@ Insperation:    NES BOX Theme by Travis Wilson
  </subset>
  
  <subset name="LogoColor" displayName="${LogoColorSubsetName}" appliesTo="system">
-        <include name="white" displayName="${white}"/>
+        <include name="white" displayName="${white}">./assets/logocolor/white.xml</include>
 		<include name="red" displayName="${red}">./assets/logocolor/red.xml</include>
         <include name="blue" displayName="${blue}">./assets/logocolor/blue.xml</include>
 		<include name="green" displayName="${green}">./assets/logocolor/green.xml</include>
@@ -248,9 +248,14 @@ Insperation:    NES BOX Theme by Travis Wilson
    
  <feature supported="carousel">
     <view name="system">
-	<image name="logo">
+	  <image name="logo">
 		 <path>./logos/white/${system.theme}.png</path>
-	</image>
+	  </image>
+
+	  <text name="logoText">
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
+         <fontSize>0.18</fontSize> 
+      </text>
 	  
       <image name="characters" extra="true">
          <origin>0 0</origin>
