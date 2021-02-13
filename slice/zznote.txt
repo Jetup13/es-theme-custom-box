@@ -1,0 +1,1 @@
+There's a few extra icons that have 2 or 3 at the end. You can rename them to use them instead of the parent image.
