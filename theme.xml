@@ -22,6 +22,7 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<CharactersSubsetName>Characters</CharactersSubsetName>
 		<SystemInfoColorSubsetName>System Info Color</SystemInfoColorSubsetName>
 		<helpcolorSubsetName>Help Color</helpcolorSubsetName>
+		<GridviewScrollSubsetName>Grid View Scroll</GridviewScrollSubsetName>
 		<gamelistviewSubsetName>Gamelist Views</gamelistviewSubsetName>
 		<gamelistcolorSubsetName>Gamelist Color</gamelistcolorSubsetName>
 		<gamelistselectioncolorSubsetName>Gamelist Selection Color</gamelistselectioncolorSubsetName>
@@ -133,6 +134,11 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<include name="grey" displayName="${grey}">./assets/helpcolor/grey.xml</include>
  </subset>
  
+ <subset name="GridviewScroll" displayName="${GridviewScrollSubsetName}">
+        <include name="horizontal" displayName="${horizontal}">./assets/extraviews/grid.xml</include>
+		<include name="vertical" displayName="${vertical}">./assets/extraviews/gridvertical.xml</include>
+ </subset>
+ 
  <subset name="gamelistview" displayName="${gamelistviewSubsetName}">
         <include name="without metadata" displayName="${without metadata}">./assets/gamelistview/withoutmetadata.xml</include>
 		<include name="with metadata" displayName="${with metadata}">./assets/gamelistview/withmetadata.xml</include>
@@ -225,8 +231,7 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<include name="grey" displayName="${grey}">./assets/clockcolor/grey.xml</include>
  </subset>
  
-   <!--Extra Gamelist Views-->
-   <include>./assets/extraviews/grid.xml</include>
+
  
    
    <!--Theme Views-->
@@ -254,7 +259,7 @@ Insperation:    NES BOX Theme by Travis Wilson
 
 	  <text name="logoText">
          <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
-         <fontSize>0.18</fontSize> 
+         <fontSize>0.18</fontSize>
       </text>
 	  
       <image name="characters" extra="true">
