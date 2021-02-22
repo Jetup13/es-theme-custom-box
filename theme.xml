@@ -16,6 +16,7 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<BackgroundSubsetName>Background</BackgroundSubsetName>
 		<BackgroundColorSubsetName>Background Color</BackgroundColorSubsetName>
 		<LogoColorSubsetName>Logo Color</LogoColorSubsetName>
+		<LogoGradientColorSubsetName>Logo Gradient Color</LogoGradientColorSubsetName>
 		<LogoLayerSubsetName>Logo Layer</LogoLayerSubsetName>
 		<LogoBackgroundSubsetName>Logo Background</LogoBackgroundSubsetName>
 		<LogoBackgroundColorSubsetName>Logo Background Color</LogoBackgroundColorSubsetName>
@@ -76,6 +77,12 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<include name="pink" displayName="${pink}">./assets/logocolor/pink.xml</include>
 		<include name="indigo" displayName="${indigo}">./assets/logocolor/indigo.xml</include>
 		<include name="grey" displayName="${grey}">./assets/logocolor/grey.xml</include>
+ </subset>
+ 
+ <subset name="LogoGradientColor" displayName="${LogoGradientColorSubsetName}" appliesTo="system">
+        <include name="off" displayName="${off}"/>
+		<include name="grey" displayName="${grey}">./assets/logogradientcolor/grey.xml</include>
+		<include name="black" displayName="${black}">./assets/logogradientcolor/black.xml</include>
  </subset>
  
   <subset name="LogoLayer" displayName="${LogoLayerSubsetName}" appliesTo="system">
