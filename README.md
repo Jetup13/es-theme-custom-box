@@ -8,6 +8,7 @@ Custom-Box is an Emulationstation theme designed for 480x320 screens (RG351p/m, 
 - Background
 - Background Color
 - Logo Color
+- Logo Gradient Color
 - Logo Layer (Make Logo appear above or under character)
 - Logo Background
 - Logo Background Color
