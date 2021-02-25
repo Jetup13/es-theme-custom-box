@@ -22,6 +22,7 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<LogoBackgroundColorSubsetName>Logo Background Color</LogoBackgroundColorSubsetName>
 		<CharactersSubsetName>Characters</CharactersSubsetName>
 		<SystemInfoColorSubsetName>System Info Color</SystemInfoColorSubsetName>
+		<helpscreenfixSubsetName>Help Full Screen Fix</helpscreenfixSubsetName>
 		<helpcolorSubsetName>Help Color</helpcolorSubsetName>
 		<GridviewScrollSubsetName>Grid View Scroll</GridviewScrollSubsetName>
 		<gamelistviewSubsetName>Gamelist Views</gamelistviewSubsetName>
@@ -110,7 +111,7 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<include name="grey" displayName="${grey}">./assets/colorlogobackground/grey.xml</include>
  </subset>
  
-  <subset name="Characters" displayName="${CharactersSubsetName}" appliesTo="system">
+ <subset name="Characters" displayName="${CharactersSubsetName}" appliesTo="system">
 		<include name="characters" displayName="${characters}">./assets/characters/characters.xml</include>
 		<include name="slice" displayName="${slice}">./assets/characters/slice.xml</include>
 		<include name="hide" displayName="${hide}">./assets/characters/hide.xml</include>
@@ -127,6 +128,11 @@ Insperation:    NES BOX Theme by Travis Wilson
 		<include name="indigo" displayName="${indigo}">./assets/systeminfocolor/indigo.xml</include>
 		<include name="grey" displayName="${grey}">./assets/systeminfocolor/grey.xml</include>
 		<include name="hide" displayName="${hide}">./assets/systeminfocolor/hide.xml</include>
+ </subset>
+ 
+  <subset name="helpscreenfix" displayName="${helpscreenfixSubsetName}">
+		<include name="off" displayName="${off}">./assets/fullscreenfix/helpbar.xml</include>
+		<include name="on" displayName="${on}">./assets/fullscreenfix/helpfs.xml</include>
  </subset>
  
  <subset name="helpcolor" displayName="${helpcolorSubsetName}">
@@ -290,17 +296,13 @@ Insperation:    NES BOX Theme by Travis Wilson
   
  <view name="system">
      <helpsystem name="help">
-         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
-         <fontSize>0.028</fontSize>     
-         <pos>0.02 0.948</pos>      
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>   
      </helpsystem>
   </view>  
 
   <view name="detailed,video,basic,grid">
      <helpsystem name="help">
-         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
-         <fontSize>0.028</fontSize>     
-         <pos>0.02 0.948</pos>      
+         <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>    
      </helpsystem>
   </view>  
 	

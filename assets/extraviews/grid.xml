@@ -34,7 +34,7 @@ Insperation:    NES BOX Theme by Travis Wilson
     </text>
 		
 	<text name="md_name">
-        <pos>0.034 0.05</pos>
+        <pos>0.034 0.01</pos>
 	    <fontPath>./assets/font/ClearSans-Bold.ttf</fontPath>
         <fontSize>0.030</fontSize>
         <size>0.92 0.10</size>

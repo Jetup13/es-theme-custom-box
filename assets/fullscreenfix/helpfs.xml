@@ -1,0 +1,32 @@
+<!--
+theme name:     Custom Box
+Creator:        Matt Gonzales (Jetup)
+Insperation:    NES BOX Theme by Travis Wilson
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+  
+ <view name="system">
+     <helpsystem name="help">
+         <fontSize>0.031</fontSize>     
+         <pos>0.05 0.948</pos>      
+     </helpsystem>
+  </view>  
+
+  <view name="detailed,video,basic">
+     <helpsystem name="help">
+         <fontSize>0.028</fontSize>     
+         <pos>0.00 0.948</pos>      
+     </helpsystem>
+  </view>
+  
+  <view name="grid">
+     <helpsystem name="help">
+         <fontSize>0.031</fontSize>     
+         <pos>0.06 0.948</pos>      
+     </helpsystem>
+  </view> 
+  
+</theme>
